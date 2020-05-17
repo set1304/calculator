@@ -1,0 +1,81 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+.conteiner{
+    background: #6d686f;
+    box-sizing: border-box;
+    border-radius:5px;
+    padding: 4px 2px 4px 2px;
+    width: 222px;
+    color:white;
+    margin:0 auto;
+}
+
+.display{
+    height: 76px;
+    text-align: right;
+    padding:5px;
+    box-sizing: border-box;
+}
+.display .buffer {
+    font-size: 15px;
+    height: 15px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    float: right;
+    min-width: 100%;
+}
+.display .result{
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    clear: right;
+}
+.numpad{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap:1px;
+}
+.numpad .item{
+    text-align: center;
+    cursor: pointer;
+}
+.numpad .item:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.operation{
+    display: grid;
+    grid-template-rows: repeat(4, 45px);
+    grid-gap:1px;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 45px);
+    grid-gap:1px;
+    color:black;
+}
+.numbers .item:last-child{
+    grid-column: 1 / -1;
+}
+.operation .item{
+    background: #B15E5E;
+}
+.numbers .item{
+    background: #D8D8D8;
+}
+.locked{
+    font-size: 10px;
+    color:darkgray;
+}
