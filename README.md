@@ -1,4 +1,4 @@
-# my-project
+# calculator
 
 ## Project setup
 ```
